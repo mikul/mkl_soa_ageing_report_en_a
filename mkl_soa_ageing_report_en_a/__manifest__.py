@@ -1,6 +1,6 @@
 {
     'name': 'Customer Statement with Ageing Report (Enterprise)',
-    'version': '2.3.1',
+    'version': '2.3.2',
 
     'category': 'Accounting',
     'summary': 'Detailed Customer Statement with Ageing and Transaction History for Enterprise ',
@@ -24,7 +24,7 @@ This app is ideal for businesses that want to provide clear and concise statemen
     'license': 'OPL-1',
     'author': 'Mikul Buncha',
     'company': 'Mikool Inc',
-    'depends': ['accountant', 'base'],
+    'depends': ['accountant','base'],
     'data': [
         'security/ir.model.access.csv',
         'views/res_config_settings_view.xml',
