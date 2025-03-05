@@ -1,0 +1,23 @@
+<odoo>
+
+    <record id="view_soa_report_res_config_settings_custom" model="ir.ui.view">
+        <field name="name">soa.report.res.config.settings.view.form.inherit.account</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="40"/>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='audit_trail_setting_container']" position="after">
+                <block title="Customer Statment of Account Report" name="customer_soa_setting">
+                    <setting string="Default AR Account" company_dependent="1" help="Select a default AR account for opening balance">
+                        <field name="default_soa_opening_account_id"/>
+                    </setting>
+                    <setting string="Default Journal" company_dependent="1" help="Select a default Journal for opening balance">
+                        <field name="default_soa_opening_journal_id"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+
+
